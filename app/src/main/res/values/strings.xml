@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Arta Lele</string>
+    <string name="pilih_kategori">Pilih Kategori</string>
+    <string name="tambahkan_deskripsi">Tambahkan Deskripsi</string>
+    <string name="pilih_tanggal">Pilih Tanggal</string>
+    <string name="zero_price">Rp.0</string>
+    <string name="zero_weight">0 kg</string>
+    <string name="total">Total</string>
+    <string name="buku_hutang">Buku Hutang</string>
+    <string name="transaction">Transaction</string>
+    <string name="setting">Setting</string>
+    <string name="total_bersih">Total Bersih</string>
+    <string name="pemasukan">Pemasukan</string>
+    <string name="pengeluaran">Pengeluaran</string>
+    <string name="jenis_pemasukan">Jenis Pemasukan</string>
+    <string name="jenis_pengeluaran">Jenis Pengeluaran</string>
+    <string name="masukkan_nominal">Masukkan Nominal</string>
+    <string name="simpan">Simpan</string>
+    <string name="keperluan">Keperluan (Tidak Wajib)</string>
+    <string name="nama">nama</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="c">C</string>
+
+    <string name="nama_penghutang">Nama</string>
+    <string name="keperluang_hutang">Keperluan</string>
+    <string name="tandai_lunas">Tandai Lunas</string>
+    <string name="list_transaksi">List Transaksi</string>
+    <string name="total_pemasukan">Total Pemasukan</string>
+    <string name="total_pemasukan_this_month">Total pemasukan bulan ini</string>
+
+    <string name="lihat_laporan">Lihat Laporan</string>
+    <string name="tambah_kategori_baru">Tambah Kategori Baru</string>
+    <string name="tambah_nama_kategori">Nama Kategori</string>
+    <string name="zero">0</string>
+    <string name="empty_transaksi_text">Catatan %1s mu kosong, tekan tombol <b>+</b> untuk menambahkan catatan %1s. Atau tekan tombol <b>lihat laporan</b> untuk mendapatkan informasi lengkap tentang %1s anda</string>
+    <string name="lihat_semua_catatan">Lihat semua catatan</string>
+    <string name="total_pengeluaran_bulan_ini">Total pengeluaran bulan ini</string>
+    <string name="pengaturan_base_harga">Pengaturan Base Harga</string>
+    <string name="pengaturan_reminder">Pengaturan Reminder</string>
+    <string name="tentang_aplikasi">Tentang Aplikasi</string>
+    <string name="signature">Arta Lele by <b>Pancakara</b></string>
+    <string name="base_harga_sekarang_adalah">Base Harga sekarang adalah : <b>%1s</b></string>
+    <string name="harga_baru">Harga baru</string>
+</resources>

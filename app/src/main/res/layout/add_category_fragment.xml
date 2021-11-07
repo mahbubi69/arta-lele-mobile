@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.extra.category.tambah.AddCategoryFragment">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_arta_lele" />
+
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <ImageView
+            android:id="@+id/img_category"
+            android:src="@drawable/ic_help"
+            android:clickable="true"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+        <EditText
+            android:focusable="true"
+            android:id="@+id/edt_keperluan"
+            android:layout_width="match_parent"
+            android:hint="@string/tambah_nama_kategori"
+            android:layout_marginStart="16dp"
+            android:background="@color/white"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <RadioGroup
+            android:id="@+id/rd_category"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radio_income"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/pemasukan"/>
+
+            <RadioButton
+                android:layout_marginStart="16dp"
+                android:id="@+id/radio_spending"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/pengeluaran"/>
+
+        </RadioGroup>
+    </LinearLayout>
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

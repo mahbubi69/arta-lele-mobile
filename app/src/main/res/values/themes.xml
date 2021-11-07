@@ -1,0 +1,103 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.ArtaLele" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/blackLight</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="ActionButtonStyle">
+        <item name="android:background">@drawable/bg_calculator_action</item>
+        <item name="android:textColor">@color/green</item>
+        <item name="layout_constraintHeight_percent">0.2</item>
+        <item name="layout_constraintWidth_percent">0.25</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="NumberButtonStyle">
+        <item name="android:background">@drawable/bg_calculator_number</item>
+        <item name="android:textColor">@color/green</item>
+        <item name="layout_constraintHeight_percent">0.2</item>
+        <item name="layout_constraintWidth_percent">0.25</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="EqualButtonStyle">
+        <item name="android:background">@color/equalButton</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="layout_constraintHeight_percent">0.4</item>
+        <item name="layout_constraintWidth_percent">0.25</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="GoButtonStyle">
+        <item name="android:background">@color/btnConfirm</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="layout_constraintHeight_percent">0.4</item>
+        <item name="layout_constraintWidth_percent">0.25</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="ArtaLeleAmountNegativeTextStyle">
+        <item name="android:textColor">@color/light_red</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ArtaLeleAmountPositiveTextStyle">
+        <item name="android:textColor">@color/equalButton</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ArtaLeleAmountNeutralTextStyle">
+        <item name="android:textColor">@color/darkGrey</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ArtaLeleAmountPositiveTextStyleSmaller">
+        <item name="android:textColor">@color/equalButton</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ArtaLeleAmountNegativeTextStyleSmaller">
+        <item name="android:textColor">@color/light_red</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ArtaLeleTextStyle">
+        <item name="android:textColor">@color/darkGrey</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="ArtaLeleImageTambahStyle">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+
+
+
+</resources>

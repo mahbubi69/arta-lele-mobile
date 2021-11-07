@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.extra.category.tambah.IconsFragment">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:columnCount="4"
+        android:rowCount="4">
+
+        <ImageView
+            android:id="@+id/img_fish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:padding="16dp"
+            android:clickable="true"
+            android:src="@drawable/ic_tuna" />
+
+        <ImageView
+            android:id="@+id/img_eel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:padding="16dp"
+            android:clickable="true"
+            android:src="@drawable/ic_eel" />
+
+        <ImageView
+            android:id="@+id/img_paid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:padding="16dp"
+            android:clickable="true"
+            android:src="@drawable/ic_paid" />
+
+        <ImageView
+            android:id="@+id/img_pills"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:padding="16dp"
+            android:clickable="true"
+            android:src="@drawable/ic_pills" />
+
+        <ImageView
+            android:id="@+id/img_grocery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:padding="16dp"
+            android:clickable="true"
+            android:src="@drawable/ic_pushcart" />
+
+        <ImageView
+            android:id="@+id/img_person"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:padding="16dp"
+            android:clickable="true"
+            android:src="@drawable/ic_tax" />
+
+        <ImageView
+            android:id="@+id/img_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:padding="16dp"
+            android:clickable="true"
+            android:src="@drawable/ic_weight" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="3"
+
+            android:padding="16dp"
+            android:src="@drawable/ic_documents" />
+
+        <ImageView
+            android:id="@+id/img_document"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:padding="16dp"
+            android:clickable="true"
+            android:src="@drawable/ic_documents" />
+
+        <ImageView
+            android:id="@+id/img_invoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:padding="16dp"
+            android:clickable="true"
+            android:src="@drawable/ic_invoice" />
+
+        <ImageView
+            android:id="@+id/img_meat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:padding="16dp"
+            android:clickable="true"
+            android:src="@drawable/ic_meat" />
+
+        <ImageView
+            android:id="@+id/img_sheep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="3"
+            android:padding="16dp"
+            android:clickable="true"
+            android:src="@drawable/ic_sheep" />
+
+        <ImageView
+            android:id="@+id/img_parasite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:padding="16dp"
+            android:clickable="true"
+            android:src="@drawable/ic_loupe" />
+
+        <ImageView
+            android:id="@+id/img_delivery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:padding="16dp"
+            android:clickable="true"
+            android:src="@drawable/ic_delivery" />
+
+    </GridLayout>
+
+</LinearLayout>

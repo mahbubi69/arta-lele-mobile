@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.home.pemasukan.IncomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_container"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/img_trans"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_income"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_total_income_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="@string/total_pemasukan_this_month"
+                        app:layout_constraintStart_toEndOf="@+id/img_trans"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_total_income"
+                        style="@style/ArtaLeleAmountPositiveTextStyleSmaller"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="@string/zero_price"
+                        app:layout_constraintStart_toEndOf="@+id/img_trans"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_total_income_text" />
+
+                    <View
+                        android:id="@+id/view2"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_base"
+                        android:layout_marginVertical="8dp"
+                        app:layout_constraintTop_toBottomOf="@id/tv_total_income" />
+
+                    <Button
+                        android:id="@+id/btn_laporan_masuk"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_marginVertical="10dp"
+                        android:textColor="@color/green"
+                        android:textAllCaps="false"
+                        android:background="@drawable/bg_btn_lihat_laporan"
+                        android:text="@string/lihat_laporan"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/view2"
+                        app:layout_constraintWidth_percent="0.4" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tx_trans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cv_container"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginVertical="12dp"
+                android:text="@string/list_transaksi"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_all_income"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/cv_container"
+                android:background="@android:color/transparent"
+                android:textAllCaps="false"
+                android:textColor="@color/green"
+                android:drawableEnd="@drawable/ic_arrow_right"
+                android:layout_marginEnd="16dp"
+                android:text="@string/lihat_semua_catatan"
+                android:layout_height="wrap_content"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_parent_income"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/tx_trans"
+                tools:listitem="@layout/sub_transaction_item" />
+
+            <include
+                android:id="@+id/view_empty"
+                android:visibility="gone"
+                android:layout_below="@id/tx_trans"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/empty_view"/>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

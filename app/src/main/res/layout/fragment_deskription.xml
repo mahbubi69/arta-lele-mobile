@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.extra.DeskriptionFragment">
+
+    <include
+        android:id="@+id/toolbar_description"
+        layout="@layout/toolbar_arta_lele" />
+
+    <EditText
+        android:id="@+id/edt_description"
+        android:gravity="top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_description"
+        android:textSize="16sp" />
+
+</RelativeLayout>

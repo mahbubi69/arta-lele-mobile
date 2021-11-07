@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.ibnu.artalele.ui.home.HomeFragment"
+        android:label="home_fragment"
+        tools:layout="@layout/home_fragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_tambahTransaksiFragment"
+            app:destination="@id/tambahTransaksiFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_detailIncomeFragment"
+            app:destination="@id/detailIncomeFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_detailSpendingFragment"
+            app:destination="@id/detailSpendingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tambahTransaksiFragment"
+        android:name="com.ibnu.artalele.ui.home.tambah.TambahTransaksiFragment"
+        android:label="tambah_transaksi_fragment"
+        tools:layout="@layout/tambah_transaksi_fragment" >
+        <action
+            android:id="@+id/action_tambahTransaksiFragment_to_calculatorFragment"
+            app:destination="@id/calculatorFragment" />
+        <action
+            android:id="@+id/action_tambahTransaksiFragment_to_deskriptionFragment"
+            app:destination="@id/deskriptionFragment" />
+        <action
+            android:id="@+id/action_tambahTransaksiFragment_to_categoryFragment"
+            app:destination="@id/categoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bukuHutangFragment"
+        android:name="com.ibnu.artalele.ui.hutang.BukuHutangFragment"
+        android:label="buku_hutang_fragment"
+        tools:layout="@layout/buku_hutang_fragment" >
+        <action
+            android:id="@+id/action_bukuHutangFragment_to_tambahHutangFragment"
+            app:destination="@id/tambahHutangFragment" />
+        <action
+            android:id="@+id/action_bukuHutangFragment_to_detailHutangFragment"
+            app:destination="@id/detailHutangFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/tambahHutangFragment"
+        android:name="com.ibnu.artalele.ui.hutang.tambah.TambahHutangFragment"
+        android:label="tambah_hutang_fragment"
+        tools:layout="@layout/tambah_hutang_fragment" >
+        <action
+            android:id="@+id/action_tambahHutangFragment_to_calculatorFragment"
+            app:destination="@id/calculatorFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/calculatorFragment"
+        android:name="com.ibnu.artalele.ui.extra.CalculatorFragment"
+        android:label="fragment_calculator"
+        tools:layout="@layout/fragment_calculator" >
+
+        <argument
+            android:name="passToolbarName"
+            android:defaultValue="toolbar"
+            app:argType="string"/>
+    </fragment>
+    <fragment
+        android:id="@+id/deskriptionFragment"
+        android:name="com.ibnu.artalele.ui.extra.DeskriptionFragment"
+        android:label="fragment_deskription"
+        tools:layout="@layout/fragment_deskription" >
+
+        <argument
+            android:name="passToolbarName"
+            android:defaultValue="toolbar"
+            app:argType="string"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailHutangFragment"
+        android:name="com.ibnu.artalele.ui.hutang.detail.DetailHutangFragment"
+        android:label="detail_hutang_fragment"
+        tools:layout="@layout/detail_hutang_fragment" >
+
+        <argument
+            android:name="passHutangId"
+            android:defaultValue="0"
+            app:argType="integer"/>
+
+    </fragment>
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.ibnu.artalele.ui.extra.category.CategoryFragment"
+        android:label="fragment_category"
+        tools:layout="@layout/fragment_category" >
+        <action
+            android:id="@+id/action_categoryFragment_to_addCategoryFragment"
+            app:destination="@id/addCategoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/incomeCategoryFragment"
+        android:name="com.ibnu.artalele.ui.extra.category.IncomeCategoryFragment"
+        android:label="income_category_fragment"
+        tools:layout="@layout/income_category_fragment" >
+        <action
+            android:id="@+id/action_incomeCategoryFragment_to_addCategoryFragment"
+            app:destination="@id/addCategoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/spendingCategoryFragment"
+        android:name="com.ibnu.artalele.ui.extra.category.SpendingCategoryFragment"
+        android:label="spending_category_fragment"
+        tools:layout="@layout/spending_category_fragment" >
+        <action
+            android:id="@+id/action_spendingCategoryFragment_to_addCategoryFragment"
+            app:destination="@id/addCategoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addCategoryFragment"
+        android:name="com.ibnu.artalele.ui.extra.category.tambah.AddCategoryFragment"
+        android:label="add_category_fragment"
+        tools:layout="@layout/add_category_fragment" >
+        <action
+            android:id="@+id/action_addCategoryFragment_to_iconsFragment"
+            app:destination="@id/iconsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailIncomeFragment"
+        android:name="com.ibnu.artalele.ui.home.pemasukan.detail.DetailIncomeFragment"
+        android:label="detail_income_fragment"
+        tools:layout="@layout/detail_income_fragment" >
+        <argument
+            android:name="passId"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/iconsFragment"
+        android:name="com.ibnu.artalele.ui.extra.category.tambah.IconsFragment"
+        android:label="fragment_icons"
+        tools:layout="@layout/fragment_icons" />
+    <fragment
+        android:id="@+id/settingFragment2"
+        android:name="com.ibnu.artalele.ui.setting.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" >
+        <action
+            android:id="@+id/action_settingFragment2_to_basePriceFragment"
+            app:destination="@id/basePriceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailSpendingFragment"
+        android:name="com.ibnu.artalele.ui.home.pengeluaran.detail.DetailSpendingFragment"
+        android:label="detail_spending_fragment"
+        tools:layout="@layout/detail_spending_fragment" >
+        <argument
+            android:name="passid"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/basePriceFragment"
+        android:name="com.ibnu.artalele.ui.setting.price.BasePriceFragment"
+        android:label="fragment_base_price"
+        tools:layout="@layout/fragment_base_price" />
+</navigation>

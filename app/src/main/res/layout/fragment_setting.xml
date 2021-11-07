@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.setting.SettingFragment">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_arta_lele2"/>
+
+    <RelativeLayout
+        android:padding="12dp"
+        android:layout_below="@id/toolbar"
+        android:id="@+id/select_base_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_base_harga"
+            android:layout_width="34dp"
+            android:layout_height="34dp"/>
+
+        <TextView
+            android:text="@string/pengaturan_base_harga"
+            android:layout_centerVertical="true"
+            android:layout_marginHorizontal="16dp"
+            android:textStyle="bold"
+            android:layout_toEndOf="@id/img_base_harga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_gravity="end"
+            android:src="@drawable/ic_arrow_forward_grey"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_width="24dp"
+            android:layout_height="24dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:padding="12dp"
+        android:layout_below="@id/select_base_price"
+        android:id="@+id/select_setting_hutang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_setting_hutang"
+            android:layout_width="34dp"
+            android:layout_height="34dp"/>
+
+        <TextView
+            android:text="@string/pengaturan_reminder"
+            android:layout_centerVertical="true"
+            android:layout_marginHorizontal="16dp"
+            android:textStyle="bold"
+            android:layout_toEndOf="@id/img_setting_hutang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_gravity="end"
+            android:src="@drawable/ic_arrow_forward_grey"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_width="24dp"
+            android:layout_height="24dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:padding="12dp"
+        android:layout_below="@id/select_setting_hutang"
+        android:id="@+id/select_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_about"
+            android:layout_width="34dp"
+            android:layout_height="34dp"/>
+
+        <TextView
+            android:text="@string/tentang_aplikasi"
+            android:layout_centerVertical="true"
+            android:layout_marginHorizontal="16dp"
+            android:textStyle="bold"
+            android:layout_toEndOf="@id/img_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_gravity="end"
+            android:src="@drawable/ic_arrow_forward_grey"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_width="24dp"
+            android:layout_height="24dp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:text="@string/signature"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

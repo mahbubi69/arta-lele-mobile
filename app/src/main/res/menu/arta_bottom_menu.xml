@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_transaction_menu"
+        android:title="@string/transaction" />
+
+    <item
+        android:id="@+id/bukuHutangFragment"
+        android:icon="@drawable/ic_buku_hutang"
+        android:title="@string/buku_hutang"/>
+
+    <item
+        android:id="@+id/settingFragment2"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/setting"/>
+
+
+
+</menu>
